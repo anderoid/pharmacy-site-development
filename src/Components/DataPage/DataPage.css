@@ -1,0 +1,153 @@
+* {
+    margin: 0.2rem;
+    box-sizing: border-box;
+}
+
+body, html {
+    box-sizing: border-box;
+    height: 100%;
+    width:100%;
+}
+
+.bg {
+    background-image: url('./leaves.jpg');
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.heading {
+    justify-content: center;
+    /*margin:1vw 50vw 1vw 30vw;*/
+    /*margin:2rem 3rem 2rem 50vw ;*/
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.heading:hover,
+.heading:active {
+    border: 2px solid orange;
+    background-color: #ffffff;
+    color: black;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns:minmax(5rem, 1fr) minmax(5rem, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.common-css-labeller {
+    display: grid;
+    padding: 0.7rem;
+    align-self: center;
+    justify-content: center;
+}
+
+.common-inside-css-labeller {
+    padding: 0.2rem;
+    /*background: #4393ec;*/
+    /*border-radius: 0.5rem;*/
+    justify-self: center;
+    align-self: center;
+    color: white;
+}
+
+.underliner {
+    border-bottom: 1.5px solid white;
+    margin: 0;
+}
+
+.labeller {
+    justify-self: center;
+    align-self: center;
+    padding: 1px;
+    margin: 0.5rem;
+    /*border:none;*/
+    /*outline:none;*/
+    /*border-color: transparent;*/
+    /*border-bottom: 2px solid #1c87c9;*/
+
+}
+
+.boom {
+    justify-self: center;
+    align-self: center;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 5px 10px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+select {
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+select:hover,
+select:active {
+    border: 2px solid orange;
+}
+
+select option {
+
+    background-color: rgb(25, 25, 26);
+    color: white;
+
+}
+
+label:hover,
+label:active {
+    /*border-bottom: 1px solid orange;*/
+    color: #e1f802;
+
+}
+
+input:hover,
+input:active {
+    border-bottom: 1px solid orange;
+}
+
+.submitter {
+    display: grid;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    border-radius: 1rem;
+    /*border: none;*/
+    outline: none;
+    padding: 1rem 2rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid white;
+    color:white;
+}
+
+.submitter:hover,
+.submitter:active {
+    background-color: orange;
+    color: black;
+}
